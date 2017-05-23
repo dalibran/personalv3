@@ -1,0 +1,14 @@
+.user {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.user-content {
+  margin-top: -195px;
+  p {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
