@@ -1,9 +1,9 @@
-<span>
-  <h1> Personal Website v3</h1>
+<h1> Personal Website v3
   <a href="https://trello.com/b/YaL6TiMg/personal-website-v3">
-    <img src="https://img.shields.io/badge/%F0%9F%97%93-trello-blue.svg" alt="trello">
+      <img src="https://img.shields.io/badge/%F0%9F%97%93-trello-blue.svg" alt="trello">
   </a>
-</span>
+</h1>
+
 
 
 ![Middleman](https://dl.dropboxusercontent.com/u/10661713/middleman.svg)
