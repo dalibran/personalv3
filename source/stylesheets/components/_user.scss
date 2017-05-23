@@ -1,0 +1,42 @@
+.user {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  & ul {
+    display: flex;
+    justify-content: center;
+    & li {
+      padding: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+      & a i {
+        color: black;
+        &:hover {
+          color: rgba(black, 0.5);
+        }
+      }
+    }
+  }
+}
+
+.user-content {
+  margin-top: -5px;
+  p {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.priority-icons {
+  font-size: 40px;
+  margin: 15px;
+}
+
+.secondary-icons {
+  font-size: 25px;
+  margin: -25px;
+}
+
+

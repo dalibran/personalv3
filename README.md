@@ -4,11 +4,9 @@
   </a>
 </h1>
 
-
-
 ![Middleman](https://dl.dropboxusercontent.com/u/10661713/middleman.svg)
 ![jQuery](https://dl.dropboxusercontent.com/u/10661713/jquery.svg)
 ![Sass](https://dl.dropboxusercontent.com/u/10661713/sass-1.svg)
 ![Materialize](https://dl.dropboxusercontent.com/u/10661713/materialize.svg)
 
-This is the 3rd iteration of my personal website. I built this website using [Middleman](https://middlemanapp.com/), [jQuery](https://jquery.com/), [Sass](http://sass-lang.com/), and [Materialize](http://materializecss.com/).
+This is the 3rd iteration of my personal website. I initialized the project by cloning Le Wagon's Middleman Boilerplate, mostly due to Middleman 4 no longer supporting a Rails-style asset pipeline. I built this website using [Middleman](https://middlemanapp.com/), [jQuery](https://jquery.com/), [Sass](http://sass-lang.com/), and [Materialize](http://materializecss.com/).

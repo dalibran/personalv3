@@ -39,9 +39,11 @@ activate :autoprefixer
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+  use BetterErrors::Middleware
+  BetterErrors.application_root = __dir__
+end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
