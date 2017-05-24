@@ -22,3 +22,25 @@
     margin-right: 8px;
   }
 }
+
+.btn-project {
+  width: 96%;
+  height: 91%;
+  border: 4px double black;
+  background-color:white;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  cursor: pointer;
+  &:hover {
+    border: 4px double white;
+    background-color: black;
+    color: white;
+    & h3 {
+      font-weight: 500;
+    }
+  }
+  & h3 {
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,18 @@
+.content-container {
+  background-color: #eceff1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content-base {
+  width: 97%;
+  height: calc(96% / 2);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
