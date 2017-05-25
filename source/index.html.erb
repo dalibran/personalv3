@@ -1,21 +1,30 @@
-<div class="row" style="margin-bottom: 0px !important;">
+<div class="row override-row">
   <%= partial 'user' %>
   <div class="content-container col l8 m6 s12">
-    <div class="content-base">
-      <div class="btn-project">
+    <div class="wrapper-btn">
+      <div class="btn-project" id="projects">
         <h3>
           <i class="fa fa-folder-open" aria-hidden="true"></i>
           Projects
         </h3>
       </div>
     </div>
-    <div class="content-base">
-      <div class="btn-project">
+    <div class="wrapper-btn">
+      <div class="btn-project" id="cv">
         <h3>
           <i class="fa fa-suitcase" aria-hidden="true"></i>
           CV
         </h3>
       </div>
+    </div>
+    <div class="content-base">
+    <!--   <div class="btn-user override-btn-user">
+        <h6>
+          <i class="fa fa-suitcase" aria-hidden="true"></i>
+          CV
+        </h6>
+      </div> -->
+      <%= partial 'projects' %>
     </div>
   </div>
 </div>

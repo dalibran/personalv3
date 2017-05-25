@@ -16,6 +16,16 @@
   margin-bottom: 30px;
 }
 
+.justify-content {
+  display: flex;
+  justify-content: center;
+}
+
+// overrides default margin bottom on materialize grid
+.override-row {
+  margin-bottom: 0px !important;
+}
+
 // Backgrounds
 .bg-text {
   background: #4a4a4a;

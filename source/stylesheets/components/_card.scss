@@ -1,0 +1,72 @@
+//override classes for materialize's default cards
+
+.override-card {
+  width: 300px !important;
+  margin: 20px !important;
+  border: 4px double black !important;
+}
+
+.override-card-image {
+  border-bottom: 4px double black !important;
+  & img {
+    width: initial !important;
+  }
+}
+
+.override-card-content {
+  padding: 15px 20px 10px 20px !important;
+}
+
+.override-card-title {
+  margin-bottom: 32px !important;
+  margin-top: -10px !important;
+  font-size: 20px !important;
+  display: initial !important;
+  cursor: initial !important;
+  font-weight: 400 !important;
+  & p {
+    font-size: 12px !important;
+    font-weight: 300;
+  }
+  & i:hover {                       // changes opacity on bottom icons if hover
+    color: rgba(black, 0.5);
+  }
+  & a {                             // positions floating button
+    bottom: 118px !important;
+    border: 4px double black;
+    background-color: white;
+    color: black;
+    display: flex;
+    &:hover {
+      color: white;
+      border-color: white;
+      background-color:black;
+    }
+  }
+  & a i {                          // positions icon within floating button
+    font-size: 1.4rem !important;
+    color: black;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.override-card-action {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+  padding: 11px !important;
+  & a {
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+    color: black !important;
+  }
+  & i {
+    font-size: x-large;
+    &:hover {
+      color: rgba(black, 0.5);
+    }
+  }
+}
+

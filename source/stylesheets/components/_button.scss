@@ -23,9 +23,15 @@
   }
 }
 
+//overrides margins for buttons placed throughout the page
+.override-btn-user {
+  margin-top: 15px !important;
+  width: 20%;
+}
+
 .btn-project {
-  width: 96%;
-  height: 91%;
+  width: 100%;
+  height: 100%;
   border: 4px double black;
   background-color:white;
   display: flex;
