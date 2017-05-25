@@ -11,9 +11,9 @@
 
 This is the 3rd iteration of my personal website. I initialized the project by cloning Le Wagon's Middleman Boilerplate, mostly due to Middleman 4 no longer supporting a Rails-style asset pipeline. I built this website using [Middleman](https://middlemanapp.com/), [jQuery](https://jquery.com/), [Sass](http://sass-lang.com/), and [Materialize](http://materializecss.com/).
 
-<h2>How to Run in Development<h2>
+<h3>How to Run in Development</h3>
 
-Assuming you are on macOS and you've installed Ruby and RubyGems, next you'll want to ensure that Xcode and Middleman are installed. If you need to install, then run the following commands:
+Assuming you're on macOS and you've installed Ruby and RubyGems, next you'll want to ensure that Xcode and Middleman are installed. If you need to install, then run the following commands:
 
 `xcode-select --install`
 `gem install middleman`
@@ -22,7 +22,7 @@ Assuming you are on macOS and you've installed Ruby and RubyGems, next you'll wa
 
 `git clone git@github.com:dalibran/personalv3.git`
 
-2. Install Relevant Gems
+2. Navigate to the Project Directory and Install Relevant Gems
 
 `bundle install`
 
