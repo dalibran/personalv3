@@ -15,17 +15,24 @@ This is the 3rd iteration of my personal website. I initialized the project by c
 
 Assuming you're on macOS and you've installed Ruby and RubyGems, next you'll want to ensure that Xcode and Middleman are installed. If you need to install, then run the following commands:
 
-`xcode-select --install`
-`gem install middleman`
+```ruby
+xcode-select --install
+gem install middleman
+```
 
 1. Clone the Repo onto your Local Machine
 
-`git clone git@github.com:dalibran/personalv3.git`
+```git clone git@github.com:dalibran/personalv3.git
+```
 
 2. Navigate to the Project Directory and Install Relevant Gems
 
-`bundle install`
+```ruby
+bundle install
+```
 
 3. Start the Middleman Server From Within the Project Directory
 
-`middleman server`
+```ruby
+middleman server
+```
