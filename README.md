@@ -22,17 +22,18 @@ gem install middleman
 
 1. Clone the Repo onto your Local Machine
 
-```git clone git@github.com:dalibran/personalv3.git
+```zsh
+git clone git@github.com:dalibran/personalv3.git
 ```
 
 2. Navigate to the Project Directory and Install Relevant Gems
 
-```ruby
+```zsh
 bundle install
 ```
 
 3. Start the Middleman Server From Within the Project Directory
 
-```ruby
+```zsh
 middleman server
 ```
