@@ -22,3 +22,31 @@
     margin-right: 8px;
   }
 }
+
+//overrides margins for buttons placed throughout the page
+.override-btn-user {
+  margin-top: 15px !important;
+  width: 20%;
+}
+
+.btn-project {
+  width: 100%;
+  height: 100%;
+  border: 4px double black;
+  background-color:white;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  cursor: pointer;
+  &:hover {
+    border: 4px double white;
+    background-color: black;
+    color: white;
+    & h3 {
+      font-weight: 500;
+    }
+  }
+  & h3 {
+    font-weight: 300;
+  }
+}

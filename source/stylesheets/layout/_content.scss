@@ -1,0 +1,32 @@
+.content-container {
+  background-color: #eceff1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.wrapper-btn {
+  width: 96%;
+  height: calc(94% / 2);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 0;
+}
+
+.content-base {
+  height: 98%;
+  width: 96%;
+  left: 2%;
+  top: 1%;
+  position: absolute;
+  background-color: white;
+  border: 4px double black;
+  z-index: -1;
+  overflow: scroll;
+}
