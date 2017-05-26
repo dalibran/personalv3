@@ -17,15 +17,23 @@
         </h3>
       </div>
     </div>
-    <div class="content-base">
-    <!--   <div class="btn-user override-btn-user">
-        <h6>
-          <i class="fa fa-suitcase" aria-hidden="true"></i>
-          CV
-        </h6>
-      </div> -->
-      <%= partial 'projects' %>
-    </div>
+    <div class="content-base"></div>
   </div>
 </div>
+
+<script>
+  $(document).ready(function(){
+    $('#projects').click(function () {
+      $('.wrapper-btn').css('z-index', -1)
+      $('.content-base').css('z-index', 3);
+      $('.content-base').html('<%= escape_javascript(partial 'projects') %>')
+    });
+
+    $('#cv').click(function () {
+      $('.wrapper-btn').css('z-index', -1)
+      $('.content-base').css('z-index', 3);
+      $('.content-base').html('<%= escape_javascript(partial 'cv') %>')
+    });
+  });
+</script>
 

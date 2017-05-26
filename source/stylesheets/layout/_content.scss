@@ -20,13 +20,12 @@
 }
 
 .content-base {
-  height: 98%;
-  width: 96%;
-  left: 2%;
-  top: 1%;
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  top: 0%;
   position: absolute;
-  background-color: white;
-  border: 4px double black;
+  background-color: #eceff1;
   z-index: -1;
   overflow: scroll;
 }
