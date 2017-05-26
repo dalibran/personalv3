@@ -1,0 +1,40 @@
+//overrides for the default Materialize Navbar
+
+.override-nav {
+  background-color: #eceff1 !important;
+  border-bottom: 4px double black !important;
+  color: black !important;
+  position: initial !important;
+  & a {
+    color: black !important;
+  }
+}
+
+.override-brand-logo {
+  color: black !important;
+  margin-left: 10px !important;
+  font-size: 1.7rem !important;
+  cursor: pointer;
+  &:hover {
+    color: rgba(black, 0.5) !important;
+  }
+}
+
+.override-brand-logo-center {
+  color: black !important;
+  font-size: 1.2rem !important;
+  & i {
+    margin-right: 5px !important;
+  }
+}
+
+.override-icons {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.override-hamburger-btn {
+  @extend .hide-on-med-and-up;
+  display: flex;
+  align-items: center;
+}
