@@ -23,8 +23,8 @@
   <div class='row override-row'>
     <div class="col s12 m12 l6 justify-content override-padding">
       <div class="card sticky-action override-card">
-        <div class="card-image waves-effect waves-block waves-light override-card-image">
-          <img src=http://placehold.it/300x200 alt='stuff' />
+        <div class="card-image waves-effect waves-block waves-light" style="background-color: #FED700;">
+          <%= image_tag "logo-mr-cocktail.svg", class: 'logo' %>
         </div>
         <div class="card-content override-card-content">
           <span class="card-title activator grey-text text-darken-4 override-card-title">
@@ -49,7 +49,7 @@
         </div>
       </div>
     </div>
-    <div class="col s12 m12 l6 justify-content override-padding">
+    <div class="col s12 m12 l6 override-padding justify-content">
       <div class="card sticky-action override-card">
         <div class="card-image waves-effect waves-block waves-light override-card-image">
           <img src=http://placehold.it/300x200 alt='stuff' />
@@ -136,10 +136,13 @@
   </div>
 
   <script>
-    $('#trigger-back').click(function() {
-      $('.content-base').css('z-index', -1);
-      $('.wrapper-btn').css('z-index', 0)
+    $(document).ready(function(){
+      $('#trigger-back').click(function() {
+        $('.content-base').css('z-index', -1);
+        $('.wrapper-btn').css('z-index', 0)
+      });
+      Materialize.fadeInImage('.logo')
+      $('.tooltipped').tooltip({delay: 150});
+      $(".button-collapse").sideNav();
     });
-
-    $(".button-collapse").sideNav();
   </script>
