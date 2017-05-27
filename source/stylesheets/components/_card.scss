@@ -1,5 +1,4 @@
-//override classes for materialize's default cards
-
+//override classes for materialize's default cards on projects
 .override-card {
   width: 80% !important;
   height: 425px !important;
@@ -72,6 +71,41 @@
     &:hover {
       color: rgba(black, 0.5);
     }
+  }
+}
+
+//defines card styles for CV section
+.card-job {
+  background-color: white;
+  width: 90%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  margin-top: 20px;
+}
+
+.job-title {
+  width: 75%;
+  & h4 {
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+  }
+}
+
+.job-desc {
+  width: 80%;
+}
+
+.job-details {
+  visibility: hidden;
+  width: 91%;
+  height:0px;
+  & h5 {
+    font-weight: bolder;
+    font-size: 1.2rem;
   }
 }
 

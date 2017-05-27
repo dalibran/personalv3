@@ -21,9 +21,71 @@
   </nav>
 </div>
 
-<div class='row override-row'>
-  <div class="col s12 m12 l12">
-    <div class="card-job">
+<div class='row'>
+  <div class="col s12 m12 l12 justify-content">
+    <div class="card-job z-depth-2" id='ps'>
+      <div class="job-title">
+        <h4>Instructor, Product Management • Product School
+        </h4>
+        <h6>Santa Monica, CA • Nov 2016 - Present</h6>
+        <p>I taught an 8-week, part-time course geared toward working professionals seeking a better understanding of product development. Course material included customer development, analytics, technical project management, wireframing, and more.</p>
+      </div>
+      <%= image_tag 'ps.png', class: 'logo-job' %>
+      <div class="job-details">
+        <h6>Course Reviews</h6>
+        <ul>
+          <li>• 90% of former full-time students are currently employed as product managers in LA.</li>
+          <li>• Achieved a 78 NPS score for quality of instruction in part-time course.</li>
+          <li>• First full-time course to receive a 100 NPS score in the Los Angeles market.</li>
+        </ul>
+      </div>
+      <div class='container-btn'>
+        <i class="fa fa-angle-double-down btn-expand" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m12 l12 justify-content">
+    <div class="card-job z-depth-2" id='calarts'>
+      <div class="job-title">
+        <h4>Instructor, Product Management • CalArts
+        </h4>
+        <h6>Santa Clarita, CA • Jan 2017</h6>
+        <p>I taught several product management courses, including one 10-week, full-time course, as well as one 10-week, part-time course. I also was the Product Management Instructor for GA's University Tech Intensive, a crash course on product development for CalArts students.</p>
+      </div>
+      <%= image_tag 'calarts.jpg', class: 'logo-job' %>
+      <div class="job-details">
+        <h6>Accomplishments</h6>
+        <ul>
+          <li>• 90% of former full-time students are currently employed as product managers in LA.</li>
+          <li>• Achieved a 78 NPS score for quality of instruction in part-time course.</li>
+          <li>• First full-time course to receive a 100 NPS score in the Los Angeles market.</li>
+        </ul>
+      </div>
+      <div class='container-btn'>
+        <i class="fa fa-angle-double-down btn-expand" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m12 l12 justify-content">
+    <div class="card-job z-depth-2" id='ga'>
+      <div class="job-title">
+        <h4>Instructor, Product Management • General Assembly
+        </h4>
+        <h6>Santa Monica, CA • Jan 2016 - Dec 2016</h6>
+        <p>I taught several product management courses, including one 10-week, full-time course, as well as one 10-week, part-time course. I also was the Product Management Instructor for GA's University Tech Intensive, a crash course on product development for CalArts students.</p>
+      </div>
+      <%= image_tag 'ga.jpg', class: 'logo-job' %>
+      <div class="job-details">
+        <h6>Accomplishments</h6>
+        <ul>
+          <li>• 90% of former full-time students are currently employed as product managers in LA.</li>
+          <li>• Achieved a 78 NPS score for quality of instruction in part-time course.</li>
+          <li>• First full-time course to receive a 100 NPS score in the Los Angeles market.</li>
+        </ul>
+      </div>
+      <div class='container-btn'>
+        <i class="fa fa-angle-double-down btn-expand" aria-hidden="true"></i>
+      </div>
     </div>
   </div>
 </div>
@@ -33,6 +95,29 @@
     $('.content-base').css('z-index', -1);
     $('.wrapper-btn').css('z-index', 0)
   });
+
+  function expandCard(id) {
+   $(id + ' > .container-btn > .btn-expand').click(function() {
+      var btnClass = $(id + ' > .container-btn > i').attr('class').includes('up');
+      if(btnClass) {
+        $(id + ' > .job-details').css('height', '0px');
+        $(id + ' > .job-details').css('visibility', 'hidden');
+        $(id + ' > .card-job').css('height', 'auto');
+        $(id + ' > .container-btn > .btn-expand').css('transform', 'rotate(0deg)');
+        $(this).removeClass('up');
+      } else {
+        $(id + ' > .container-btn > .btn-expand').css('transform', 'rotate(180deg)');
+        $(id + ' > .job-details').css('visibility', 'initial');
+        $(id + ' > .job-details').css('height', 'auto');
+        $(id + ' > .card-job').css('height', 'auto');
+        $(this).addClass('up');
+      }
+    })
+  };
+
+  expandCard('#ga');
+  expandCard('#ps');
+  expandCard('#calarts');
 
   $(".button-collapse").sideNav();
 </script>
