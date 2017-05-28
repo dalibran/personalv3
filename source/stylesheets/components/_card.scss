@@ -1,20 +1,21 @@
-//override classes for materialize's default cards
-
+//override classes for materialize's default cards on projects
 .override-card {
-  width: 100% !important;
-  margin: 15px !important;
+  width: 80% !important;
+  height: 425px !important;
   border: 4px double black !important;
+  margin: 30px !important;
 }
 
 .override-card-image {
-  border-bottom: 4px double black !important;
   & img {
-    width: initial !important;
+    height: 225px;
   }
 }
 
 .override-card-content {
-  padding: 15px 20px 10px 20px !important;
+  padding: 10px 20px 10px 20px !important;
+  margin-bottom: 26% !important;
+  border-top: 4px double black !important;
 }
 
 .override-card-title {
@@ -32,7 +33,7 @@
     color: rgba(black, 0.5);
   }
   & a {                             // positions floating button
-    bottom: 118px !important;
+    bottom: 41% !important;
     border: 4px double black;
     background-color: white;
     color: black;
@@ -44,7 +45,7 @@
     }
   }
   & a i {                          // positions icon within floating button
-    font-size: 1.4rem !important;
+    font-size: 1.2rem !important;
     color: black;
     &:hover {
       color: white;
@@ -53,10 +54,13 @@
 }
 
 .override-card-action {
-  display: flex !important;
-  justify-content: space-around !important;
-  align-items: center !important;
+  position: absolute !important;
+  bottom: 0% !important;
+  width: 100% !important;
   padding: 11px !important;
+  margin-top: 45px !important;
+  display: flex;
+  justify-content: space-around;
   & a {
     margin-right: 15px !important;
     margin-left: 15px !important;
@@ -67,6 +71,50 @@
     &:hover {
       color: rgba(black, 0.5);
     }
+  }
+}
+
+//defines card styles for CV section
+.card-job {
+  background-color: white;
+  width: 90%;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  margin-top: 20px;
+  & hr {
+    width: 65%;
+    display: none;
+    opacity: 0.2;
+  }
+  &:hover {
+    border: 4px double black;
+  }
+}
+
+.job-title {
+  width: 75%;
+  & h4 {
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+  }
+  & h6 {
+    margin-bottom: 1.14rem !important;
+  }
+}
+
+.job-desc {
+  width: 80%;
+}
+
+.job-details {
+  display: none;
+  width: 91%;
+  & h5 {
+    font-weight: bolder;
+    font-size: 1.1rem;
   }
 }
 

@@ -6,24 +6,215 @@
         <i class="fa fa-suitcase center override-icons" aria-hidden="true"></i>
         CV
       </div>
-      <i class="fa fa-bars button-collapse right hide-on-med-and-up override-hamburger-btn" aria-hidden="true" data-activates="mobile-demo"></i>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
+      <ul id="nav-mobile" class="right filters">
+        <li><i class="fa fa-laptop tooltipped" aria-hidden="true" data-position='bottom' id="product" data-delay="10" data-tooltip="Filter by Product Experience"></i></li>
+        <li><i class="fa fa-university tooltipped" aria-hidden="true" data-position='bottom' id="teaching" data-delay="10" data-tooltip="Filter by Teaching Experience"></i><li>
+        <li><i class="fa fa-graduation-cap tooltipped" aria-hidden="true" data-position='bottom' data-delay="10" id="education" data-tooltip="Filter by Education"></i><li>
       </ul>
     </div>
   </nav>
 </div>
 
-<div class='row override-row'>
-  <ul>
-  </ul>
+<div class='row'>
+  <div class="col s12 m12 l12 justify-content all">
+    <div class="content-header" style='margin-top:5px !important;'>
+      <h5>Professional Experience</h5>
+      <hr>
+    </div>
+  </div>
+  <div class="col s12 m12 l12 justify-content product hidden">
+    <div class="content-header product-header" style='margin-top:5px !important;'>
+      <h5>Product Experience</h5>
+      <hr>
+    </div>
+  </div>
+  <div class="col s12 m12 l12 justify-content product">
+    <div class="card-job">
+      <div class="job-title" style="margin-bottom: 5px;">
+        <h4>Product Manager (Consultant) • Gigster, Scal.io
+        </h4>
+        <h6>Los Angeles, CA • Jan 2016 - Present</h6>
+        <p>Contracted as a freelance product manager for several software development agencies. I created backlogs, identified milestones, analyzed data to drive decision making, and managed diverse stakeholder groups. The products I've worked on include social media management tools (www.postplanner.com), architectural design plugins for SketchUp, and an iOS social network and dating app (www.nightlyapp.com).</p>
+      </div>
+      <ul style="margin-top: 5px;">
+        <li><%= image_tag 'gigster.png', class: 'logo-job', style: 'width: 55px;' %></li>
+        <li><%= image_tag 'scalio.png', class: 'logo-job' %></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col s12 m12 l12 justify-content teaching hidden">
+    <div class="content-header product-header" style='margin-top:5px !important;'>
+      <h5>Teaching Experience</h5>
+      <hr>
+    </div>
+  </div>
+  <div class="col s12 m12 l12 justify-content teaching">
+    <div class="card-job" id='ps'>
+      <div class="job-title">
+        <h4>Instructor, Product Management • Product School
+        </h4>
+        <h6>Santa Monica, CA • Nov 2016 - Present</h6>
+        <p>Taught an 8-week, part-time course geared toward working professionals seeking a better understanding of product development. Course material included customer development, analytics, technical project management, wireframing, and more.</p>
+      </div>
+      <%= image_tag 'ps.png', class: 'logo-job' %>
+      <hr>
+      <div class="job-details">
+        <h5>Course Reviews</h5>
+        <ul>
+          <li>• <%= link_to 'Student Review 1', 'https://goo.gl/PEvuLZ', target: '_blank' %></li>
+          <li>• <%= link_to 'Student Review 2', 'https://www.yelp.com/biz/product-school-san-francisco?hrid=oRc7WSkM78l67i9i46bcGQ&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)', target: '_blank' %></li>
+          <li>• <%= link_to 'Student Review 3', 'https://goo.gl/HSq54s', target: '_blank' %></li>
+        </ul>
+      </div>
+      <div class='container-btn'>
+        <i class="fa fa-angle-double-down btn-expand" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m12 l12 justify-content teaching">
+    <div class="card-job" id='calarts'>
+      <div class="job-title">
+        <h4>Instructor, Product Management • CalArts
+        </h4>
+        <h6>Santa Clarita, CA • Jan 2017</h6>
+        <p>Invited to teach several product management workshops as part of CalArt's H.I.V.E. (Hybrid Incubator for Visionary Entrepreneurs) initiative. My lectures focused on Customer Development, Product / Market Fit, Product Validation, and more.</p>
+      </div>
+      <%= image_tag 'calarts.jpg', class: 'logo-job' %>
+      <hr>
+      <div class="job-details">
+        <h5>Media</h5>
+        <ul>
+          <li>• <%= link_to 'H.I.V.E. Instructor Profile', 'http://hive.calarts.edu/organizer/dana-alibrandi/', target: '_blank' %></li>
+        </ul>
+      </div>
+      <div class='container-btn'>
+        <i class="fa fa-angle-double-down btn-expand" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m12 l12 justify-content teaching">
+    <div class="card-job" id='ga'>
+      <div class="job-title">
+        <h4>Instructor, Product Management • General Assembly
+        </h4>
+        <h6>Santa Monica, CA • Jan 2016 - Dec 2016</h6>
+        <p>Taught several product management courses, including one 10-week, full-time course, as well as one 10-week, part-time course. I also was the Product Management Instructor for GA's University Tech Intensive, a crash course on product development for CalArts students.</p>
+      </div>
+      <%= image_tag 'ga.jpg', class: 'logo-job' %>
+      <hr>
+      <div class="job-details">
+        <h5>Accomplishments</h5>
+        <ul>
+          <li>• 90% of former full-time students are currently employed as product managers in LA.</li>
+          <li>• Achieved a 78 NPS score for quality of instruction in part-time course.</li>
+          <li>• First full-time course to receive a 100 NPS score in the Los Angeles market.</li>
+        </ul>
+      </div>
+      <div class='container-btn'>
+        <i class="fa fa-angle-double-down btn-expand" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m12 l12 justify-content product">
+    <div class="card-job" id='fullscreen'>
+      <div class="job-title">
+        <h4>Product Manager • Fullscreen Media
+        </h4>
+        <h6>Playa Vista, CA • July 2014 - Oct 2015</h6>
+        <p>Led a cross-functional team of designers, engineers, and marketers to deliver meaningful product releases around streaming video, rights management, and influencer marketing. I developed long-term roadmaps, managed large stakeholder groups of VPs and C-Suite executives, wrote user stories and acceptance criteria, and managed product backlogs in JIRA.</p>
+      </div>
+      <%= image_tag 'fullscreen.png', class: 'logo-job' %>
+      <hr>
+      <div class="job-details">
+        <h5>Accomplishments</h5>
+        <ul>
+          <li>• Product solutions boosted amount of monetized video content by 140%.</li>
+          <li>• Generated incremental product revenues of $100,000 in first 6 months of operation.</li>
+          <li>• Saved 232 weeks of manpower after 2 months of operation and a month long sprint.</li>
+          <li>• Automated reporting saved 240 hours a month and enhanced the client-facing product.</li>
+          <li>• Outstanding Employee Performance Recognition (June 2015).</li>
+        </ul>
+      </div>
+      <div class='container-btn'>
+        <i class="fa fa-angle-double-down btn-expand" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m12 l12 justify-content product" style="margin-bottom: 15px;">
+    <div class="card-job" id='zefr'>
+      <div class="job-title">
+        <h4>Associate Product Manager • ZEFR
+        </h4>
+        <h6>Venice, CA • June 2012 - April 2014</h6>
+        <p>Owned product management functions related to user acceptance testing, feedback analysis, and requirements gathering in pursuit of meaningful improvements to ZEFR's rights management service.</p>
+      </div>
+      <%= image_tag 'zefr.jpg', class: 'logo-job' %>
+      <hr>
+      <div class="job-details">
+        <h5>Accomplishments</h5>
+        <ul>
+          <li>• Grew monthly DRM optimization revenue by 23%.</li>
+          <li>• Boosted optimization team’s monthly productivity by 76%.</li>
+          <li>• Developed passive revenue stream with a monthly growth rate of 65%.</li>
+          <li>• Identified KPIs across 100 million data points to drive development.</li>
+          <li>• Led team in generated revenue with over 41,000 videos optimized for premium ads.</li>
+          <li>• Developed employee training program yielding an average productivity increase of 40%. </li>
+        </ul>
+      </div>
+      <div class='container-btn'>
+        <i class="fa fa-angle-double-down btn-expand" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m12 l12 justify-content education" style='margin-top:5px'>
+    <div class="content-header">
+      <h5>Education & Certifications</h5>
+      <hr>
+    </div>
+  </div>
+  <div class="col s12 m12 l12 justify-content education">
+    <div class="card-job" id='lewagon'>
+      <div class="job-title">
+        <h4>Web Development • Le Wagon
+        </h4>
+        <h6>Montréal, QC, Canada • Feb 2017 - May 2017</h6>
+        <p>Graduated from Le Wagon's 9 week, full stack web development bootcamp (Batch #63) with over 360 hours of instruction in modern web dev techniques. The technologies powering my projects include Ruby on Rails, PostgreSQL, HTML/CSS/JS, jQuery, Ajax, Bootstrap, Materialize, and more.</p>
+      </div>
+      <%= image_tag 'lewagon.png', class: 'logo-job' %>
+      <hr>
+      <div class="job-details">
+        <h5>Media</h5>
+          <ul>
+            <li>• <%= link_to "Final Project Presentations (April 28, 2017)", 'https://www.youtube.com/watch?v=Uez3x8lbUcY&feature=youtu.be&t=24m7s' %></li>
+            <li>• <%= link_to "Wagon Talk w/ Caterina Rizzi, Co-Founder of Breather (April 5, 2017)", 'https://www.facebook.com/lewagonmontreal/videos/1715906498436505/' %></li>
+            <li>• <%= link_to "Wagon Talk w/ Sylvain Carle, General Manager of FounderFuel (April 12, 2017)", 'https://www.facebook.com/lewagonmontreal/videos/1726023184091503/' %></li>
+          </ul>
+      </div>
+      <div class='container-btn'>
+        <i class="fa fa-angle-double-down btn-expand" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m12 l12 justify-content education">
+    <div class="card-job" id='zefr'>
+      <div class="job-title">
+        <h4>Certified ScrumMaster • Scrum Alliance
+        </h4>
+        <h6>July 2015 - July 2017</h6>
+      </div>
+      <%= image_tag 'scrum.png', class: 'logo-job csm-fix' %>
+    </div>
+  </div>
+  <div class="col s12 m12 l12 justify-content education">
+    <div class="card-job" id='zefr'>
+      <div class="job-title">
+        <h4>University of North Carolina at Chapel Hill
+        </h4>
+        <h6>B.A. Philosophy</h6>
+      </div>
+      <%= image_tag 'unc.jpg', class: 'logo-job' %>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -32,5 +223,50 @@
     $('.wrapper-btn').css('z-index', 0)
   });
 
-  $(".button-collapse").sideNav();
+  function expandCard(id) {
+   $(id + ' > .container-btn > .btn-expand').click(function() {
+      var btnClass = $(id + ' > .container-btn > i').attr('class').includes('up');
+      if(btnClass) {
+        $(id + ' > hr').css('display', 'none');
+        $(id + ' > .job-details').css('display', 'none');
+        $(id + ' > .card-job').css('height', 'auto');
+        $(id + ' > .container-btn > .btn-expand').css('transform', 'rotate(0deg)');
+        $(this).removeClass('up');
+      } else {
+        $(id + ' > hr').css('display', 'initial');
+        $(id + ' > .container-btn > .btn-expand').css('transform', 'rotate(180deg)');
+        $(id + ' > .job-details').css('display', 'initial');
+        $(id + ' > .card-job').css('height', 'auto');
+        $(this).addClass('up');
+      }
+    })
+  };
+
+  expandCard('#ga');
+  expandCard('#ps');
+  expandCard('#calarts');
+  expandCard('#zefr');
+  expandCard('#fullscreen');
+  expandCard('#lewagon');
+
+  function filterExp(id) {
+    var content = $('.row > .justify-content');
+    $('#' + id).click(function() {
+      content.each(function(item) {
+        if ($(this).attr('class').includes(id) != true) {
+          $(this).addClass('hidden');
+        } else {
+          $(this).removeClass('hidden');
+        }
+      });
+    });
+  }
+
+  filterExp('education');
+  filterExp('product');
+  filterExp('teaching');
+
+  $('.tooltipped').tooltip({delay: 150});
+
+
 </script>

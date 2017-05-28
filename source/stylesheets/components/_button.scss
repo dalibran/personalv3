@@ -50,3 +50,21 @@
     font-weight: 300;
   }
 }
+
+.btn-expand {
+  font-size: 1.7rem;
+  margin-bottom: 5px;
+  cursor: pointer;
+  color: #bdbdbd;
+  &:hover {
+    color: rgba(#bdbdbd, 0.7);
+  }
+}
+
+// aligns btn within job card div
+.container-btn {
+  display: flex;
+  justify-content:center;
+  align-items: flex-end;
+  width: 100%;
+}
