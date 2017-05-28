@@ -52,11 +52,12 @@
 }
 
 .btn-expand {
-  font-size: 30px;
+  font-size: 1.7rem;
   margin-bottom: 5px;
   cursor: pointer;
+  color: #bdbdbd;
   &:hover {
-    color: rgba(black, 0.7);
+    color: rgba(#bdbdbd, 0.7);
   }
 }
 

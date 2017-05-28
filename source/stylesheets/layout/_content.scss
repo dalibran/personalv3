@@ -29,3 +29,23 @@
   z-index: -1;
   overflow: scroll;
 }
+
+.content-header {
+  width: 90%;
+  display: flex;
+  align-items:center;
+  & hr {
+    width: inherit;
+  }
+  & h5 {
+    white-space: nowrap;
+    margin-right: 20px;
+    width: auto;
+    font-weight: bolder;
+    font-size: 1.3rem;
+  }
+}
+
+.hidden {
+  display:none !important;
+}

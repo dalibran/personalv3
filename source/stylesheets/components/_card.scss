@@ -80,11 +80,18 @@
   width: 90%;
   height: auto;
   position: relative;
-  overflow: hidden;
   display: flex;
   justify-content: space-around;
   flex-wrap:wrap;
   margin-top: 20px;
+  & hr {
+    width: 65%;
+    display: none;
+    opacity: 0.2;
+  }
+  &:hover {
+    border: 4px double black;
+  }
 }
 
 .job-title {
@@ -93,6 +100,9 @@
     font-size: 1.3rem !important;
     font-weight: 600 !important;
   }
+  & h6 {
+    margin-bottom: 1.14rem !important;
+  }
 }
 
 .job-desc {
@@ -100,12 +110,11 @@
 }
 
 .job-details {
-  visibility: hidden;
+  display: none;
   width: 91%;
-  height:0px;
   & h5 {
     font-weight: bolder;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
