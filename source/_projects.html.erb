@@ -133,8 +133,8 @@
   <script>
     $(document).ready(function(){
       $('#trigger-back').click(function() {
-        $('.content-base').css('z-index', -1);
-        $('.wrapper-btn').css('z-index', 0)
+        $('.content-base').addClass('hidden');
+        $('.content-container').removeClass('hidden');
       });
       Materialize.fadeInImage('.logo')
       $('.tooltipped').tooltip({delay: 150});
