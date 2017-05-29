@@ -1,39 +1,41 @@
 <div class="row override-row">
   <%= partial 'user' %>
   <div class="content-container col l8 m6 s12">
+    <div class="polygon"></div>
+    <div class="polygon-2"></div>
+    <div class="polygon-3"></div>
     <div class="wrapper-btn">
-      <div class="btn-project" id="projects">
-        <h3>
+      <div class="btn-main" id="projects">
+        <h6>
           <i class="fa fa-folder-open" aria-hidden="true"></i>
           Projects
-        </h3>
+        </h6>
       </div>
-    </div>
-    <div class="wrapper-btn">
-      <div class="btn-project" id="cv">
-        <h3>
+      <div class="btn-main" id="cv">
+        <h6>
           <i class="fa fa-suitcase" aria-hidden="true"></i>
           CV
-        </h3>
+        </h6>
       </div>
     </div>
-    <div class="content-base"></div>
+  </div>
+  <div class="col l8 m6 s12 content-base rm-padding hidden">
   </div>
 </div>
 
 <script>
-  $(document).ready(function(){
-    $('#projects').click(function () {
-      $('.wrapper-btn').css('z-index', -1)
-      $('.content-base').css('z-index', 3);
-      $('.content-base').html('<%= escape_javascript(partial 'projects') %>')
-    });
 
-    $('#cv').click(function () {
-      $('.wrapper-btn').css('z-index', -1)
-      $('.content-base').css('z-index', 3);
-      $('.content-base').html('<%= escape_javascript(partial 'cv') %>')
-    });
+  $('#projects').click(function () {
+    $('.content-container').addClass('hidden');
+    $('.content-base').removeClass('hidden');
+    $('.content-base').html('<%= escape_javascript(partial 'projects') %>')
   });
+
+  $('#cv').click(function () {
+    $('.content-container').addClass('hidden');
+    $('.content-base').removeClass('hidden');
+    $('.content-base').html('<%= escape_javascript(partial 'cv') %>')
+  });
+
 </script>
 

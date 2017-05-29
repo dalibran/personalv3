@@ -215,12 +215,19 @@
       <%= image_tag 'unc.jpg', class: 'logo-job' %>
     </div>
   </div>
+  <div class="col s12 m12 l12 justify-content end" style="margin-top:20px;">
+    <div class="content-header final-header">
+      <hr>
+      <h5 style="margin-right:0px;"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></h5>
+      <hr>
+    </div>
+  </div>
 </div>
 
 <script>
   $('#trigger-back').click(function() {
-    $('.content-base').css('z-index', -1);
-    $('.wrapper-btn').css('z-index', 0)
+    $('.content-base').addClass('hidden');
+    $('.content-container').removeClass('hidden');
   });
 
   function expandCard(id) {
@@ -259,6 +266,7 @@
           $(this).removeClass('hidden');
         }
       });
+      $('.row > .end').removeClass('hidden');
     });
   }
 

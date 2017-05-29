@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'middleman', '~> 3.4'
 gem 'better_errors'
+gem 'middleman-google-analytics', '~> 3.0'
 
 # Deploy to GitHub Pages
 gem 'middleman-deploy', '~> 1.0'

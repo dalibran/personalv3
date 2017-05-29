@@ -80,11 +80,19 @@ configure :build do
   activate :build_cleaner
 end
 
+# Google Analytics tracking
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-46843167-2'
+  ga.allow_linker = false
+  ga.domain_name = 'danaalibrandi.com'
+end
+
 # Deployment
 activate :deploy do |deploy|
   deploy.method = :git
   deploy.build_before = true
-
+  deploy.remote = 'git@github.com:dalibran/dalibran.github.io.git'
+  deploy.branch = 'master'
   # Optional Settings
   # deploy.remote = 'custom-remote' # remote name or git url, default: origin
   # deploy.branch = 'custom-branch' # default: gh-pages

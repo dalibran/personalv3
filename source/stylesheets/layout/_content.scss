@@ -1,22 +1,33 @@
 .content-container {
-  background-color: #eceff1;
+  background-color: white;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   position: relative;
+  overflow:hidden;
 }
 
+// .wrapper-btn {
+//   width: 96%;
+//   height: calc(94% / 2);
+//   background-color: white;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-wrap: wrap;
+//   z-index: 0;
+// }
+
 .wrapper-btn {
-  width: 96%;
-  height: calc(94% / 2);
-  background-color: white;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  z-index: 0;
+  flex-direction: column;
+  width: 200px;
+  height: 100vh;
 }
 
 .content-base {
@@ -24,7 +35,6 @@
   width: 100%;
   left: 0%;
   top: 0%;
-  position: absolute;
   background-color: #eceff1;
   z-index: -1;
   overflow: scroll;
@@ -46,6 +56,42 @@
   }
 }
 
+.final-header {
+  & i {
+    font-size: 25px;
+    margin: 0px 15px 0px 15px;
+  }
+}
+
 .hidden {
   display:none !important;
+}
+
+.polygon {
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent;
+  border-bottom: 900px solid transparent;
+  border-left: 400px solid black;
+  transform: rotate(-22deg);
+}
+
+.polygon-2 {
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-bottom: 1150px solid transparent;
+  border-left: 400px solid black;
+  transform: rotate(554deg);
+  position: absolute;
+}
+
+.polygon-3 {
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-bottom: 800px solid transparent;
+  border-left: 300px solid black;
+  transform: rotate(-210deg);
+  position: absolute;
 }
