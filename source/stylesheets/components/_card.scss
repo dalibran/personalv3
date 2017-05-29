@@ -1,21 +1,38 @@
 //override classes for materialize's default cards on projects
 .override-card {
   width: 80% !important;
-  height: 425px !important;
-  border: 4px double black !important;
+  height: auto !important;
   margin: 30px !important;
 }
 
+.icons-built-with {
+  background-color: #eceff1;
+  padding: 3px;
+  border-radius: 6%;
+  display: flex;
+  justify-content: space-around;
+  width: 71%;
+  margin-top: 10px;
+  & i {
+    font-size: smaller;
+  }
+}
+
+.reveal-content {
+  line-height: 33px;
+}
+
 .override-card-image {
+  display: flex;
+  justify-content: center;
   & img {
     height: 225px;
   }
 }
 
 .override-card-content {
-  padding: 10px 20px 10px 20px !important;
-  margin-bottom: 26% !important;
-  border-top: 4px double black !important;
+  display: flex;
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
 }
 
 .override-card-title {
@@ -33,11 +50,13 @@
     color: rgba(black, 0.5);
   }
   & a {                             // positions floating button
-    bottom: 41% !important;
-    border: 4px double black;
+    bottom: 188px !important;
     background-color: white;
     color: black;
-    display: flex;
+    border: 4px double black;
+    display: flex !important;
+    justify-content:center !important;
+    align-items: center !important;
     &:hover {
       color: white;
       border-color: white;
@@ -88,9 +107,6 @@
     width: 65%;
     display: none;
     opacity: 0.2;
-  }
-  &:hover {
-    border: 4px double black;
   }
 }
 

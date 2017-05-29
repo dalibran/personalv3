@@ -6,17 +6,16 @@
           <i class="fa fa-folder-open center override-icons" aria-hidden="true"></i>
           Projects
         </div>
-        <i class="fa fa-bars button-collapse right hide-on-med-and-up override-hamburger-btn" aria-hidden="true" data-activates="mobile-demo"></i>
-        <ul id="nav-mobile" class="right filters">
-          <li><i class="fa fa-laptop tooltipped" aria-hidden="true" data-position='bottom' id="product" data-delay="10" data-tooltip="Filter by Product Experience"></i></li>
-          <li><i class="fa fa-university tooltipped" aria-hidden="true" data-position='bottom' id="teaching" data-delay="10" data-tooltip="Filter by Teaching Experience"></i><li>
-          <li><i class="fa fa-graduation-cap tooltipped" aria-hidden="true" data-position='bottom' data-delay="10" id="education" data-tooltip="Filter by Education"></i><li>
-        </ul>
+<!--         <ul id="nav-mobile" class="right filters project-filters">
+          <li><i class="icon-ruby-on-rails tooltipped" data-position='bottom' data-delay="10" data-tooltip="Filter by Ruby on Rails"></i></li>
+          <li><i class="icon-reactjs tooltipped" aria-hidden="true" data-position='bottom' data-delay="10" data-tooltip="Filter by React.js"></i></li>
+          <li><i class="icon-javascript tooltipped" data-position='bottom' data-delay="10" data-tooltip="Filter by Javascript"></i></li>
+        </ul> -->
       </div>
     </nav>
   </div>
   <div class='row override-row'>
-    <div class="col s12 m12 l6 justify-content override-padding">
+    <div class="col s12 m12 l6 xl6 override-padding justify-content">
       <div class="card sticky-action override-card">
         <div class="card-image waves-effect waves-block waves-light" style="background-color: #FED700;">
           <%= image_tag "logo-mr-cocktail.svg", class: 'logo' %>
@@ -28,6 +27,12 @@
               <i class="fa fa-file-text-o" aria-hidden="true"></i>
             </a>
             <p>Generate fun recipes to describe your friends!</p>
+            <ul class='icons-built-with'>
+              <li><i class="icon-ruby-on-rails tooltipped" data-position='bottom' data-delay="10" data-tooltip="Ruby on Rails"></i></li>
+              <li><i class="icon-jquery tooltipped" aria-hidden="true" data-position='bottom' data-delay="10" data-tooltip="jQuery"></i></li>
+              <li><i class="icon-sass tooltipped" data-position='bottom' data-delay="10" data-tooltip="Sass"></i></li>
+              <li><i class="icon-heroku tooltipped" aria-hidden=true data-position='bottom' data-delay="10" id="javascript" data-tooltip="Heroku"></i></li>
+            </ul>
             </span>
         </div>
         <div class="card-action override-card-action">
@@ -40,91 +45,110 @@
             Mr. Cocktail v2
             <i class="fa fa-times right" aria-hidden="true"></i>
           </span>
-          <p>Mr Cocktail is an awesome app, try that shit yo.</p>
+          <p class='reveal-content'>Mr Cocktail v2 is a rethinking of an assignment at Le Wagon Montréal, a 9 week, full-time web dev bootcamp. This version of the site allows you to choose a Facebook friend and create a "recipe" to describe that person. It was built using Rails, jQuery, Sass, and Heroku.</p>
         </div>
       </div>
     </div>
-    <div class="col s12 m12 l6 override-padding justify-content">
+    <div class="col s12 m12 l6 xl6 override-padding justify-content">
       <div class="card sticky-action override-card">
-        <div class="card-image waves-effect waves-block waves-light override-card-image">
-          <img src=http://placehold.it/300x200 alt='stuff' />
+        <div class="card-image waves-effect waves-block waves-light">
+          <%= image_tag "portfolio.svg", class: 'logo' %>
         </div>
         <div class="card-content override-card-content">
           <span class="card-title activator grey-text text-darken-4 override-card-title">
-            Mr. Cocktail v2
+            Portfolio
             <a class="btn-floating halfway-fab waves-effect waves-light">
               <i class="fa fa-file-text-o" aria-hidden="true"></i>
             </a>
-            <p>Generate fun recipes to describe your friends!</p>
-            </span>
+            <p>Personal portfolio to showcase my dev work.</p>
+            <ul class='icons-built-with'>
+              <li><i class="icon-ruby-on-rails tooltipped" data-position='bottom' data-delay="10" data-tooltip="Ruby on Rails"></i></li>
+              <li><i class="icon-jquery tooltipped" aria-hidden="true" data-position='bottom' data-delay="10" data-tooltip="jQuery"></i></li>
+              <li><i class="icon-sass tooltipped" data-position='bottom' data-delay="10" data-tooltip="Sass"></i></li>
+              <li><i class="fa fa-github tooltipped" aria-hidden=true data-position='bottom' data-delay="10"  data-tooltip="Github Pages"></i></li>
+            </ul>
+          </span>
         </div>
         <div class="card-action override-card-action">
-          <a href="http://mr-ms-cocktail.herokuapp.com" target="_blank" class="tooltipped" data-position='top' data-delay="10" data-tooltip="Visit the Site!"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
-          <a href="https://github.com/dalibran/mr-ms-cocktail-v2" target="_blank" class="tooltipped" data-position='top' data-delay="10" data-tooltip="Github Repo"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://github.com/dalibran/personalv3" target="_blank" class="tooltipped" data-position='top' data-delay="10" data-tooltip="Github Repo"><i class="fa fa-github" aria-hidden="true"></i></a>
           <a href="https://trello.com/b/Aj5ohjZQ/mr-cocktail-v2" target="_blank" class="tooltipped" data-position='top' data-delay="10" data-tooltip="Trello Board"><i class="fa fa-trello" aria-hidden="true"></i></a>
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4 override-card-title">
-            Mr. Cocktail v2
+            Portfolio
             <i class="fa fa-times right" aria-hidden="true"></i>
           </span>
-          <p>Mr Cocktail is an awesome app, try that shit yo.</p>
+          <p class='reveal-content'>I built my portfolio using Middleman, a static site generator that leverages many of the tools and techniques used in Rails development. I also used jQuery to filter page content, render specific partials, and expand CV card content. I used Sass for styling and deployed using Github Pages.</p>
+
         </div>
       </div>
     </div>
-    <div class="col s12 m12 l6 justify-content override-padding">
+    <div class="col s12 m12 l6 xl6 override-padding justify-content">
       <div class="card sticky-action override-card">
-        <div class="card-image waves-effect waves-block waves-light override-card-image">
-          <img src=http://placehold.it/300x200 alt='stuff' />
+        <div class="card-image waves-effect waves-block waves-light">
+          <%= image_tag "parkit.svg", class: 'logo' %>
         </div>
         <div class="card-content override-card-content">
           <span class="card-title activator grey-text text-darken-4 override-card-title">
-            Mr. Cocktail v2
+            ParkIt
             <a class="btn-floating halfway-fab waves-effect waves-light">
               <i class="fa fa-file-text-o" aria-hidden="true"></i>
             </a>
-            <p>Generate fun recipes to describe your friends!</p>
-            </span>
+            <p>Crowdsourced parking support for Montréalers.</p>
+            <ul class='icons-built-with'>
+              <li><i class="icon-ruby-on-rails tooltipped" data-position='bottom' data-delay="10" data-tooltip="Ruby on Rails"></i></li>
+              <li><i class="icon-jquery tooltipped" aria-hidden="true" data-position='bottom' data-delay="10" data-tooltip="jQuery"></i></li>
+              <li><i class="icon-sass tooltipped" data-position='bottom' data-delay="10" data-tooltip="Sass"></i></li>
+              <li><i class="icon-postgres tooltipped" data-position='bottom' data-delay="10" data-tooltip="Postgres"></i></li>
+              <li><i class="icon-heroku tooltipped" aria-hidden=true data-position='bottom' data-delay="10"  data-tooltip="Heroku"></i></li>
+            </ul>
+          </span>
         </div>
         <div class="card-action override-card-action">
-          <a href="http://mr-ms-cocktail.herokuapp.com" target="_blank" class="tooltipped" data-position='top' data-delay="10" data-tooltip="Visit the Site!"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
-          <a href="https://github.com/dalibran/mr-ms-cocktail-v2" target="_blank" class="tooltipped" data-position='top' data-delay="10" data-tooltip="Github Repo"><i class="fa fa-github" aria-hidden="true"></i></a>
-          <a href="https://trello.com/b/Aj5ohjZQ/mr-cocktail-v2" target="_blank" class="tooltipped" data-position='top' data-delay="10" data-tooltip="Trello Board"><i class="fa fa-trello" aria-hidden="true"></i></a>
+          <a href="http://www.ppparkit.website" target="_blank" class="tooltipped" data-position='top' data-delay="10" data-tooltip="Visit the Site!"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+          <a href="https://github.com/dalibran/ppparkit" target="_blank" class="tooltipped" data-position='top' data-delay="10" data-tooltip="Github Repo"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://trello.com/b/2wbYg0Fd/ppparkit" target="_blank" class="tooltipped" data-position='top' data-delay="10" data-tooltip="Trello Board"><i class="fa fa-trello" aria-hidden="true"></i></a>
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4 override-card-title">
-            Mr. Cocktail v2
+            ParkIt
             <i class="fa fa-times right" aria-hidden="true"></i>
           </span>
-          <p>Mr Cocktail is an awesome app, try that shit yo.</p>
+          <p class='reveal-content'>ParkIt was my final project culminating 9 weeks at Le Wagon Montreal learning web development. The app leverages real data from the City of Montreal to locate paid parking spots. From there, users are incentivized through gamification to identify available spots, thus allowing people to easily find parking.</p>
         </div>
       </div>
     </div>
-    <div class="col s12 m12 l6 justify-content override-padding">
+    <div class="col s12 m12 l6 xl6 override-padding justify-content">
       <div class="card sticky-action override-card">
-        <div class="card-image waves-effect waves-block waves-light override-card-image">
-          <img src=http://placehold.it/300x200 alt='stuff' />
+        <div class="card-image waves-effect waves-block waves-light">
+          <%= image_tag "bikes.png", class: 'logo' %>
         </div>
         <div class="card-content override-card-content">
           <span class="card-title activator grey-text text-darken-4 override-card-title">
-            Mr. Cocktail v2
+            BBBikes
             <a class="btn-floating halfway-fab waves-effect waves-light">
               <i class="fa fa-file-text-o" aria-hidden="true"></i>
             </a>
-            <p>Generate fun recipes to describe your friends!</p>
-            </span>
+            <p>Airbnb for High-End Performance Bicycles.</p>
+            <ul class='icons-built-with'>
+              <li><i class="icon-ruby-on-rails tooltipped" data-position='bottom' data-delay="10" data-tooltip="Ruby on Rails"></i></li>
+              <li><i class="icon-jquery tooltipped" aria-hidden="true" data-position='bottom' data-delay="10" data-tooltip="jQuery"></i></li>
+              <li><i class="icon-sass tooltipped" data-position='bottom' data-delay="10" data-tooltip="Sass"></i></li>
+              <li><i class="icon-postgres tooltipped" data-position='bottom' data-delay="10" data-tooltip="Postgres"></i></li>
+              <li><i class="icon-heroku tooltipped" aria-hidden=true data-position='bottom' data-delay="10"  data-tooltip="Heroku"></i></li>
+            </ul>
+          </span>
         </div>
         <div class="card-action override-card-action">
-          <a href="http://mr-ms-cocktail.herokuapp.com" target="_blank" class="tooltipped" data-position='top' data-delay="10" data-tooltip="Visit the Site!"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
-          <a href="https://github.com/dalibran/mr-ms-cocktail-v2" target="_blank" class="tooltipped" data-position='top' data-delay="10" data-tooltip="Github Repo"><i class="fa fa-github" aria-hidden="true"></i></a>
-          <a href="https://trello.com/b/Aj5ohjZQ/mr-cocktail-v2" target="_blank" class="tooltipped" data-position='top' data-delay="10" data-tooltip="Trello Board"><i class="fa fa-trello" aria-hidden="true"></i></a>
+          <a href="https://bbbikes.herokuapp.com/" target="_blank" class="tooltipped" data-position='top' data-delay="10" data-tooltip="Visit the Site!"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+          <a href="https://github.com/mengzhouli/bbbikes" target="_blank" class="tooltipped" data-position='top' data-delay="10" data-tooltip="Github Repo"><i class="fa fa-github" aria-hidden="true"></i></a>
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4 override-card-title">
-            Mr. Cocktail v2
+            BBBikes
             <i class="fa fa-times right" aria-hidden="true"></i>
           </span>
-          <p>Mr Cocktail is an awesome app, try that shit yo.</p>
+          <p class='reveal-content'>BBBikes was my first group project, as well as my first project using Ruby on Rails. The app was designed to be an Airbnb clone for cyclists in the Greater Montreal Area. Users could offer their high-performance bicycles for rent, similar to hosting an apt on Airbnb.</p>
         </div>
       </div>
     </div>
