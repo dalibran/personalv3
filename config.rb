@@ -92,7 +92,7 @@ activate :deploy do |deploy|
   deploy.method = :git
   deploy.build_before = true
   deploy.remote = 'git@github.com:dalibran/dalibran.github.io.git'
-  deploy.branch = 'middleman-staging'
+  deploy.branch = 'master'
   # Optional Settings
   # deploy.remote = 'custom-remote' # remote name or git url, default: origin
   # deploy.branch = 'custom-branch' # default: gh-pages
