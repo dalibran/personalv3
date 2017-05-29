@@ -9,17 +9,6 @@
   overflow:hidden;
 }
 
-// .wrapper-btn {
-//   width: 96%;
-//   height: calc(94% / 2);
-//   background-color: white;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   flex-wrap: wrap;
-//   z-index: 0;
-// }
-
 .wrapper-btn {
   position: absolute;
   display: flex;
@@ -28,6 +17,27 @@
   flex-direction: column;
   width: 200px;
   height: 100vh;
+}
+
+// home screen styling for mobile
+@media screen and (max-width: 480px) {
+    .wrapper-btn {
+      left:25%;
+    }
+    .polygon {
+      left: 0%;
+      top: -15%;
+      position: absolute;
+    }
+    .polygon-2 {
+      top: -40%;
+      right: 10%;
+    }
+    .polygon-3 {
+      right: 15%;
+      transform: rotate(-200deg);
+      position: absolute;
+    }
 }
 
 .content-base {
