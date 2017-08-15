@@ -11,7 +11,7 @@
 
 This is the 3rd iteration of my personal website. I initialized the project by cloning Le Wagon's Middleman Boilerplate, mostly due to Middleman 4 no longer supporting a Rails-style asset pipeline. I built this website using [Middleman](https://middlemanapp.com/), [jQuery](https://jquery.com/), [Sass](http://sass-lang.com/), and [Materialize](http://materializecss.com/).
 
-<h3>How to Run in Development</h3>
+<h3>Development</h3>
 
 Assuming you're on macOS and you've installed Ruby and RubyGems, next you'll want to ensure that Xcode and Middleman are installed. If you need to install, then run the following commands:
 
