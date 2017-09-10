@@ -1,4 +1,4 @@
-<img src="https://cdn.worldvectorlogo.com/logos/middleman.svg" alt="middleman" width="64px" height="64px"> <img src="https://js.foundation/wp-content/uploads/sites/33/2017/02/jquery.png" alt="jquery" width="64px" height="64px"> <img src="http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png" alt="sass" width="64px" height="64px"> <img src="https://codigofacilito.com/system/courses/white_avatars/000/000/076/medium/materialize.png?1461776253" alt="materialize" width="64px" height="64px">
+<img src="https://cdn.worldvectorlogo.com/logos/middleman.svg" alt="middleman" width="64px" height="64px"> <img src="https://js.foundation/wp-content/uploads/sites/33/2017/02/jquery.png" alt="jquery" width="64px" height="64px"> <img src="http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png" alt="sass" width="64px" height="64px"> <img src="https://seeklogo.com/images/M/materialize-logo-0FCAD8A6F8-seeklogo.com.png" alt="materialize" width="70px" height="64px">
 
 <h1> Personal Website v3
   <a href="https://trello.com/b/YaL6TiMg/personal-website-v3">
