@@ -1,7 +1,4 @@
-![Middleman](https://dl.dropboxusercontent.com/u/10661713/middleman.svg)
-![jQuery](https://dl.dropboxusercontent.com/u/10661713/jquery.svg)
-![Sass](https://dl.dropboxusercontent.com/u/10661713/sass-1.svg)
-![Materialize](https://dl.dropboxusercontent.com/u/10661713/materialize.svg)
+<img src="https://cdn.worldvectorlogo.com/logos/middleman.svg" alt="middleman" width="64px" height="64px"> <img src="https://js.foundation/wp-content/uploads/sites/33/2017/02/jquery.png" alt="jquery" width="64px" height="64px"> <img src="http://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png" alt="sass" width="64px" height="64px"> <img src="http://blockino.ufsc.br/img/tech/materialize.png" alt="materialize" width="64px" height="64px">
 
 <h1> Personal Website v3
   <a href="https://trello.com/b/YaL6TiMg/personal-website-v3">
