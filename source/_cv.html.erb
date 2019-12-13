@@ -2,7 +2,7 @@
   <nav class='override-nav z-depth-0'>
     <div class="nav-wrapper">
       <i class="fa fa-angle-double-left brand-logo override-brand-logo left override-icons" id="trigger-back" aria-hidden="true"></i>
-      <div class='brand-logo center override-brand-logo-center'>
+      <div class='brand-logo center override-brand-logo-center' id="home">
         <i class="fa fa-suitcase center override-icons" aria-hidden="true"></i>
         CV
       </div>
@@ -18,7 +18,7 @@
 <div class='row'>
   <div class="col s12 m12 l12 justify-content all">
     <div class="content-header" style='margin-top:5px !important;'>
-      <h5>Professional Experience</h5>
+      <h5>Experience</h5>
       <hr>
     </div>
   </div>
@@ -29,16 +29,52 @@
     </div>
   </div>
   <div class="col s12 m12 l12 justify-content product">
-    <div class="card-job">
+    <div class="card-job" id="dash">
       <div class="job-title" style="margin-bottom: 5px;">
-        <h4>Product Manager (Consultant) • Gigster, Scal.io
+        <h4>Product Manager, Platform • Dash Core Group
         </h4>
-        <h6>Los Angeles, CA • Jan 2016 - Present</h6>
-        <p>Contracted as a freelance product manager for several software development agencies. I created backlogs, identified milestones, analyzed data to drive decision making, and managed diverse stakeholder groups. The products I've worked on include social media management tools (www.postplanner.com), architectural design plugins for SketchUp, and an iOS social network and dating app (www.nightlyapp.com).</p>
+        <h6>Los Angeles, CA • May 2018 - Present</h6>
+        <p>Managing the development of Dash Platform, a technology stack allowing for the storage and securitization of application data on the Dash p2p network. The initial components of the stack include a decentralized API, storage, and name service, as well as a client SDK and developer hub.</p>
       </div>
       <ul style="margin-top: 5px;">
-        <li><%= image_tag 'gigster.png', class: 'logo-job', style: 'width: 55px;' %></li>
-        <li><%= image_tag 'scalio.png', class: 'logo-job' %></li>
+        <li><%= image_tag 'dash.png', class: 'logo-job' %></li>
+      </ul>
+      <hr>
+      <div class="job-details">
+        <h5>Media</h5>
+        <ul>
+          <li>• <%= link_to 'An Introduction to Dash Platform, DAPI, and Drive', 'https://blog.dash.org/an-introduction-to-dash-platform-dapi-and-drive-9d080d6e89c9', target: '_blank' %></li>
+          <li>• <%= link_to 'Dash Platform Presentation, Dash Convention Zurich (September 2019)', 'https://www.youtube.com/watch?v=5Q1cCt9v1U0', target: '_blank' %></li>
+          <li>• <%= link_to 'Dash Platform Presentation, Dash News Podcast (October 2019)', 'https://www.youtube.com/watch?v=vK9SWDEZfiM', target: '_blank' %></li>
+        </ul>
+      </div>
+      <div class='container-btn'>
+        <i class="fa fa-angle-double-down btn-expand" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m12 l12 justify-content product">
+    <div class="card-job">
+      <div class="job-title" style="margin-bottom: 5px;">
+        <h4>Founder, Product Management Consultant • Future Cities
+        </h4>
+        <h6>Los Angeles, CA • Jan 2016 - Present</h6>
+        <p>Founded a consultancy catering to organizations seeking product management services and training. To date, my work has included a social media management platform, an online dating app for iOS, an architectural design plugin for SketchUp, and workflow tools for YouTube multi-channel networks.</p>
+      </div>
+      <ul style="margin-top: 5px;">
+        <li><%= image_tag 'futurecities.png', class: 'logo-job', style: 'width: 55px;' %></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col s12 m12 l12 justify-content product">
+    <div class="card-job">
+      <div class="job-title" style="margin-bottom: 5px;">
+        <h4>Product Manager • Originate</h4>
+        <h6>Los Angeles, CA • Jun 2017 - Jan 2018</h6>
+        <p>Managed a team of 4 Android engineers, 4 iOS engineers, 3 QA resources, and 2 designers while developing National Geographic's mobile app for Australia. I was responsible for defining feature requirements, managing stakeholders, guiding product design, and managing development sprints.</p>
+      </div>
+      <ul style="margin-top: 5px;">
+        <li><%= image_tag 'originate.png', class: 'logo-job', style: 'width: 55px;' %></li>
       </ul>
     </div>
   </div>
@@ -51,19 +87,17 @@
   <div class="col s12 m12 l12 justify-content teaching">
     <div class="card-job" id='ps'>
       <div class="job-title">
-        <h4>Instructor, Product Management • Product School
+        <h4>Lead Product Management Instructor • Product School
         </h4>
-        <h6>Santa Monica, CA • Nov 2016 - Present</h6>
-        <p>Taught an 8-week, part-time course geared toward working professionals seeking a better understanding of product development. Course material included customer development, analytics, technical project management, wireframing, and more.</p>
+        <h6>Santa Monica, CA • Nov 2016 - July 2018</h6>
+        <p>I've taught four 8 week, part-time product management courses for aspiring and seasoned PMs, as well as a week long corporate intensive course on-site in Austin, Texas.</p>
       </div>
-      <%= image_tag 'ps.png', class: 'logo-job' %>
+      <%= image_tag 'ps.jpg', class: 'logo-job' %>
       <hr>
       <div class="job-details">
-        <h5>Course Reviews</h5>
+        <h5>Accomplishments</h5>
         <ul>
-          <li>• <%= link_to 'Student Review 1', 'https://goo.gl/PEvuLZ', target: '_blank' %></li>
-          <li>• <%= link_to 'Student Review 2', 'https://www.yelp.com/biz/product-school-san-francisco?hrid=oRc7WSkM78l67i9i46bcGQ&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)', target: '_blank' %></li>
-          <li>• <%= link_to 'Student Review 3', 'https://goo.gl/HSq54s', target: '_blank' %></li>
+          <li>• <%= link_to 'Student Reviews of My Courses', 'https://www.yelp.com/biz/product-school-santa-monica-santa-monica-4?q=dana', target: '_blank' %></li>
         </ul>
       </div>
       <div class='container-btn'>
@@ -71,7 +105,7 @@
       </div>
     </div>
   </div>
-  <div class="col s12 m12 l12 justify-content teaching">
+  <!-- <div class="col s12 m12 l12 justify-content teaching">
     <div class="card-job" id='calarts'>
       <div class="job-title">
         <h4>Instructor, Product Management • CalArts
@@ -91,14 +125,14 @@
         <i class="fa fa-angle-double-down btn-expand" aria-hidden="true"></i>
       </div>
     </div>
-  </div>
+  </div> -->
   <div class="col s12 m12 l12 justify-content teaching">
     <div class="card-job" id='ga'>
       <div class="job-title">
         <h4>Instructor, Product Management • General Assembly
         </h4>
         <h6>Santa Monica, CA • Jan 2016 - Dec 2016</h6>
-        <p>Taught several product management courses, including one 10-week, full-time course, as well as one 10-week, part-time course. I also was the Product Management Instructor for GA's University Tech Intensive, a crash course on product development for CalArts students.</p>
+        <p>Taught numerous product management courses, including one 10 week, full-time course as well as one 10 week, part-time course. I was also the Product Management instructor for GA's University Tech Intensive, a product crash course for artists at CalArts.</p>
       </div>
       <%= image_tag 'ga.jpg', class: 'logo-job' %>
       <hr>
@@ -121,7 +155,7 @@
         <h4>Product Manager • Fullscreen Media
         </h4>
         <h6>Playa Vista, CA • July 2014 - Oct 2015</h6>
-        <p>Led a cross-functional team of designers, engineers, and marketers to deliver meaningful product releases around streaming video, rights management, and influencer marketing. I developed long-term roadmaps, managed large stakeholder groups of VPs and C-Suite executives, wrote user stories and acceptance criteria, and managed product backlogs in JIRA.</p>
+        <p>Led a cross-functional team of designers, engineers, and marketers to deliver meaningful product releases around streaming video, rights management, and influencer marketing.</p>
       </div>
       <%= image_tag 'fullscreen.png', class: 'logo-job' %>
       <hr>
@@ -131,8 +165,6 @@
           <li>• Product solutions boosted amount of monetized video content by 140%.</li>
           <li>• Generated incremental product revenues of $100,000 in first 6 months of operation.</li>
           <li>• Saved 232 weeks of manpower after 2 months of operation and a month long sprint.</li>
-          <li>• Automated reporting saved 240 hours a month and enhanced the client-facing product.</li>
-          <li>• Outstanding Employee Performance Recognition (June 2015).</li>
         </ul>
       </div>
       <div class='container-btn'>
@@ -146,7 +178,7 @@
         <h4>Associate Product Manager • ZEFR
         </h4>
         <h6>Venice, CA • June 2012 - April 2014</h6>
-        <p>Owned product management functions related to user acceptance testing, feedback analysis, and requirements gathering in pursuit of meaningful improvements to ZEFR's rights management service.</p>
+        <p>Owned product management functions related to user acceptance testing, feedback analysis, and requirements gathering for ZEFR's digital rights management (DRM) service.</p>
       </div>
       <%= image_tag 'zefr.jpg', class: 'logo-job' %>
       <hr>
@@ -155,10 +187,6 @@
         <ul>
           <li>• Grew monthly DRM optimization revenue by 23%.</li>
           <li>• Boosted optimization team’s monthly productivity by 76%.</li>
-          <li>• Developed passive revenue stream with a monthly growth rate of 65%.</li>
-          <li>• Identified KPIs across 100 million data points to drive development.</li>
-          <li>• Led team in generated revenue with over 41,000 videos optimized for premium ads.</li>
-          <li>• Developed employee training program yielding an average productivity increase of 40%. </li>
         </ul>
       </div>
       <div class='container-btn'>
@@ -168,31 +196,29 @@
   </div>
   <div class="col s12 m12 l12 justify-content education" style='margin-top:5px'>
     <div class="content-header">
-      <h5>Education & Certifications</h5>
+      <h5>Education</h5>
       <hr>
     </div>
   </div>
   <div class="col s12 m12 l12 justify-content education">
     <div class="card-job" id='lewagon'>
       <div class="job-title">
-        <h4>Web Development • Le Wagon
-        </h4>
-        <h6>Montréal, QC, Canada • Feb 2017 - May 2017</h6>
-        <p>Graduated from Le Wagon's 9 week, full stack web development bootcamp (Batch #63) with over 360 hours of instruction in modern web dev techniques. The technologies powering my projects include Ruby on Rails, PostgreSQL, HTML/CSS/JS, jQuery, Ajax, Bootstrap, Materialize, and more.</p>
+        <h4>Web Development • Le Wagon</h4>
+        <h6>Feb 2017 - May 2017</h6>
       </div>
       <%= image_tag 'lewagon.png', class: 'logo-job' %>
-      <hr>
-      <div class="job-details">
+      <!-- <hr> -->
+      <!-- <div class="job-details">
         <h5>Media</h5>
           <ul>
             <li>• <%= link_to "Final Project Presentations (April 28, 2017)", 'https://www.youtube.com/watch?v=Uez3x8lbUcY&feature=youtu.be&t=24m7s' %></li>
             <li>• <%= link_to "Wagon Talk w/ Caterina Rizzi, Co-Founder of Breather (April 5, 2017)", 'https://www.facebook.com/lewagonmontreal/videos/1715906498436505/' %></li>
             <li>• <%= link_to "Wagon Talk w/ Sylvain Carle, General Manager of FounderFuel (April 12, 2017)", 'https://www.facebook.com/lewagonmontreal/videos/1726023184091503/' %></li>
           </ul>
-      </div>
-      <div class='container-btn'>
+      </div> -->
+      <!-- <div class='container-btn'>
         <i class="fa fa-angle-double-down btn-expand" aria-hidden="true"></i>
-      </div>
+      </div> -->
     </div>
   </div>
   <div class="col s12 m12 l12 justify-content education">
@@ -250,12 +276,12 @@
     })
   };
 
+  expandCard('#dash');
   expandCard('#ga');
   expandCard('#ps');
   expandCard('#calarts');
   expandCard('#zefr');
   expandCard('#fullscreen');
-  expandCard('#lewagon');
 
   function filterExp(id) {
     var content = $('.row > .justify-content');
